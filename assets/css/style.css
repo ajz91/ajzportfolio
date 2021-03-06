@@ -1,0 +1,36 @@
+body {
+    background-color:#fffbf0;
+}
+
+/* Header Style Start */
+
+header {
+    background-color: #404040;
+    display:flex;
+}
+
+header h1 {
+    display:flex;
+    background-color:#a0c0c0;
+    padding:0px 5px 0px 50px;
+    align-items:center;
+}
+
+/* Nav Style Start */
+
+nav {
+    display:flex;
+    margin-left:auto;
+    order:2;
+}
+
+/* Hero Style Start */
+
+.hero {
+    display:flex;
+}
+
+.herotext {
+    display:flex;
+    align-self:end;
+}
