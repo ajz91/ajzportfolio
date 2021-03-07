@@ -5,13 +5,13 @@ body {
 /* Header */
 
 header {
-    background-color: #404040;
+    background-color: #11d3cf;
     display: flex;
 }
 
 header h1 {
     display: flex;
-    background-color: #a0c0c0;
+    background-color: #fcf9ec;
     padding: 0px 5px 0px 50px;
     align-items: center;
 }
@@ -34,11 +34,11 @@ nav ul {
 }
 
 nav ul a {
-    color:#a0c0c0;
+    color:#fff;
     text-decoration: none;
     margin-right:20px;
     padding: 0px 10px 0px 10px;
-    border-bottom: 3px solid #a0c0c0;
+    border-bottom: 3px solid #fff;
 }
 
 /* Navigation End */
@@ -94,16 +94,66 @@ nav ul a {
 
 /* Work */
 
-#worklinks {
+.worklinks {
     margin-left: 1%;
     margin-top: 7px;
     border-left: 3px solid #404040;
     padding-left:20px;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    align-content:space-between;
 }
 
-#worklinks a img:nth-child(1) {
-    order: 1;
-    flex: 0 1 90%;
-    align-items: center;
-    width:75%;
+.worklinks a img {
+    filter: brightness(50%);
+}
+
+.worklinks a img:hover {
+    filter: brightness(90%);
+}
+
+.worklinks:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 100%;
+    align-self: auto;
+    order: 0;
+}
+
+.worklinks:nth-child(2) {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 50%;
+    align-self: auto;
+    order: 0;
+}
+
+.worklinks:nth-child(3) {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 50%;
+    align-self: auto;
+    order: 0;
+}
+
+.worklinks:nth-child(4) {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 50%;
+    align-self: auto;
+    order: 0;
+}
+
+.worklinks:nth-child(5) {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 50%;
+    align-self: auto;
+    order: 0;
+}
+.text-wrapper {
+    background-color:#fff;
+    border:3px solid #000;
 }
