@@ -5,16 +5,22 @@ body {
 /* Header */
 
 header {
-    background-image:url("../images/vintage.png");
+    background-image:url("../images/vintage.jpg");
     display: flex;
+    background-position: center;
+    background-attachment: fixed;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
 }
 
 header h1 {
     display: flex;
-    color:#FFFFFF;
-    background-color: #737ea4;
+    color:#faf1e8;
+    background-color:#9bc2bf;
     padding: 0px 5px 0px 50px;
-    align-items: center;
+    align-items: center;    
+    text-shadow: 1px 1px 3px black;
 }
 
 /* Header End */
@@ -35,37 +41,50 @@ nav ul {
 }
 
 nav ul a {
-    color:#fff;
+    color:#faf1e8;
     text-decoration: none;
     margin-right:20px;
     padding: 0px 10px 0px 10px;
-    border-bottom: 3px solid #fff;
+    background-color: #9bc2bf;
     border-radius: 15px;
+    text-shadow: 1px 1px 3px black;
 }
 
 nav ul a:hover {
-    border-bottom: 3px solid #737ea4;
+    border-bottom: 3px solid #f9e7d6;
 }
 
 /* Navigation End */
 
+/* headshot */
+
+#photo {
+    background-image:url("../images/face.jpg");
+    height:167px;
+    width:200px;
+    display:flex;
+}
+
 /* Hero Image */
 
 .hero {
-    background-image: url("../images/vintage.png");
+    background-image: url("../images/vintage.jpg");
     display:flex;
-    flex-direction:row-reverse;
-    height:250px;
+    flex-direction:column-reverse;
+    background-position: center;
+    background-attachment: fixed;
   }
 
 .herotext {
-    background-color:#a0c0c0;
-    text-align: right;
-    color: #404040;
-    font-size: 25px;
-    align-self:flex-end;
-    margin: 0px 5.5% 15px 0px;
+    background-color:#9bc2bf;
+    color: #faf1e8;
+    font-size: 22px;
+    align-self:flex-start;
+    margin: 10px 0px 20px 25%;
     font-weight:900;
+    text-shadow: 1px 1px 3px black;
+    border-radius: 10px;
+    padding:0px 10px 0px 10px;
 }
 
 /* Hero Image End */
@@ -82,7 +101,7 @@ nav ul a:hover {
     justify-content: space-around;
 }
 
-.cat-container {
+.cat-container, #aboutme, #work, #contactme {
     display:flex;
     margin: 3% 10% 0px 10%;
 }
@@ -184,3 +203,30 @@ nav ul a:hover {
 #contactinfo ul li a {
     padding:30px;
 }
+
+/* Media Queries */
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    #runbuddy, #project3, #project4, #project5 {
+      /* this will be applied on any screen smaller than 980px */
+      flex: 1 90%;
+      flex-wrap:wrap;
+    }
+  }
+  
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+    header h1 {
+      /* this will be applied on any screen between 768px and 575px */
+
+    }
+  }
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+    header h1 {
+      /* this will be applied on any screen smaller than 575px */
+
+    }
+  }
