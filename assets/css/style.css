@@ -11,6 +11,7 @@ header {
     background-attachment: fixed;
     position: sticky;
     position: -webkit-sticky;
+    flex-wrap:wrap;
     top: 0;
 }
 
@@ -106,12 +107,11 @@ nav ul a:hover {
     margin: 3% 10% 0px 10%;
 }
 
-
 #aboutmetext {
     min-width:50%;
     margin-left: 1%;
     margin-top: 7px;
-    border-left: 3px solid #404040;
+    border-left: 3px solid #9bc2bf;
     padding-left:20px;
 }
 
@@ -122,7 +122,7 @@ nav ul a:hover {
 .worklinks {
     margin-left: 1%;
     margin-top: 7px;
-    border-left: 3px solid #404040;
+    border-left: 3px solid #9bc2bf;
     padding-left:20px;
     flex-direction:row;
     flex-wrap:wrap;
@@ -166,23 +166,7 @@ nav ul a:hover {
     width:100%;
 }
 
-#project3 {
-    background-image:url("../images/comingsoon.png");
-    background-repeat:no-repeat;
-    height:250px;
-    width:50%;
-    display:flex;
-}
-
-#project4 {
-    background-image:url("../images/comingsoon.png");
-    background-repeat:no-repeat;
-    height:250px;
-    width:50%;
-    display:flex;
-}
-
-#project5 {
+#project3, #project4, #project5 {
     background-image:url("../images/comingsoon.png");
     background-repeat:no-repeat;
     height:250px;
@@ -202,12 +186,21 @@ nav ul a:hover {
     min-width:50%;
     margin-left: 1%;
     margin-top: 7px;
-    border-left: 3px solid #404040;
+    border-left: 3px solid #9bc2bf;
     padding-left:20px;
+    background-color:#9bc2bf;    
+    border-radius: 15px;
 }
 
 #contactinfo ul li a {
     padding:30px;
+    color:#faf1e8;
+    text-decoration:none;
+}
+
+#contactinfo ul li a:hover {
+    border-bottom: 3px solid #9bc2bf;
+    text-shadow: 1px 1px 3px black;
 }
 
 /* Media Queries */
@@ -219,20 +212,69 @@ nav ul a:hover {
       flex: 1 90%;
       flex-wrap:wrap;
     }
+
+    header {
+        position:relative;
+    }
+
+    #aboutmetext, .worklinks, #contactme {
+        margin-left: 0%;
+        margin-top: 7px;
+        border-left: 0px;
+        padding-left: 50px;
+    }
+
+    .section-title {
+        font-size:17px;
+    }
   }
   
   /* MEDIA QUERY FOR TABLETS AND SMALLER */
   @media screen and (max-width: 768px) {
-    header h1 {
       /* this will be applied on any screen between 768px and 575px */
+      #aboutmetext, .worklinks, #contactme {
+        margin-left: 0%;
+        margin-top: 7px;
+        border-left: 0px;
+        padding-left: 50px;
+    }
 
+    .section-title {
+        font-size:17px;
+    }
+
+    #contactinfo ul li a {
+        padding:6px;
+    }
+
+    header {
+        position:relative;
+    }
+
+    .section-title {
+        font-size:17px;
     }
   }
   
   /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
   @media screen and (max-width: 575px) {
-    header h1 {
       /* this will be applied on any screen smaller than 575px */
+    #aboutmetext, .worklinks, #contactme {
+        margin-left: 0%;
+        margin-top: 7px;
+        border-left: 0px;
+        padding-left: 50px;
+    }
 
+    .section-title {
+        font-size:17px;
+    }
+
+    #contactinfo ul li a {
+        padding:6px;
+    }
+
+    header {
+        position:relative;
     }
   }
