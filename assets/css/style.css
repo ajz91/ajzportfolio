@@ -131,15 +131,6 @@ nav ul a:hover {
     align-content:space-evenly;
 }
 
-.worklinks a img {
-    filter: brightness(50%);
-}
-
-.worklinks a img:hover {
-    filter: brightness(90%);
-}
-
-
 .text-wrapper {
     display:flex;
     align-self:center;
@@ -151,6 +142,11 @@ nav ul a:hover {
     height:250px;
     width:100%;
     display:flex;
+    filter: brightness(70%);
+}
+
+#surfer:hover, #runbuddy:hover {
+    filter: brightness(100%);
 }
 
 #runbuddy {
@@ -159,6 +155,7 @@ nav ul a:hover {
     height:250px;
     width:50%;
     display:flex;
+    filter: brightness(70%);
 }
 
 #runbuddy a, #surfer a {
