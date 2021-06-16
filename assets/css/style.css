@@ -145,7 +145,7 @@ nav ul a:hover {
     filter: brightness(70%);
 }
 
-#kickspro:hover, #runbuddy:hover {
+#kickspro:hover, #runbuddy:hover, #drawFriends:hover {
     filter: brightness(100%);
 }
 
@@ -158,7 +158,7 @@ nav ul a:hover {
     filter: brightness(70%);
 }
 
-#runbuddy a, #kickspro a {
+#runbuddy a, #kickspro a, #drawFriends a {
     color:#faf1e8;
     text-decoration: none;
     width:100%;
@@ -167,6 +167,14 @@ nav ul a:hover {
 
 #project3, #project4, #project5 {
     background-image:url("../images/comingsoon.png");
+    background-repeat:no-repeat;
+    height:250px;
+    width:50%;
+    display:flex;
+}
+
+#drawFriends {
+    background-image:url("../images/drawstuff.png");
     background-repeat:no-repeat;
     height:250px;
     width:50%;
@@ -206,7 +214,7 @@ nav ul a:hover {
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
-    #runbuddy, #project3, #project4, #project5 {
+    #runbuddy, #drawFriends, #project4, #project5 {
       /* this will be applied on any screen smaller than 980px */
       flex: 1 90%;
       flex-wrap:wrap;
